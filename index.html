@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="Arabic">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TResto Landing page</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body dir="rtl" class="font-['Noto Sans Arabic']">
+    <div class="container px-6 mx-auto">
+        <section class="mt-16 flex flex-col items-center text-center">
+            <img class="w-[280px]" src="images/logo_tresto.svg" alt="" srcset="">
+            <h1 class="font-[700] mt-10 max-w-3xl text-[35px] sm:text-[35px] md:text-[40px]  lg:text-[58px] leading-[53px] lg:leading-[75px]">
+                طور عملك و إسبق منافسيك
+                <span class="text-darkPink leading-[53px] lg:leading-[75px]">بإنشاء موقع للطلب لمطعمك</span>
+            </h1>
+            <p class="font-medium mt-4 text-[18px] text-center text-darkestGray max-w-full">
+                تي ريستو هو الحل الأمثل و الأسهل لإنشاء موقع طور خصيصا للمطاعم ليساعدك في تطوير مشروع عن طريق توفير خدمة التوصيل للمنزل
+            </p>
+            <p class="mt-10 font-[500] text-darkestGray text-[18px] mb-8">
+                شاهد الفيديو لمعرفة التفاصيل:
+            </p>
+
+            <!-- Video section -->
+            <div class="mb-20">
+                <div class="relative">
+                    <!-- dashboard image -->
+                    <img class="rounded-md shadow-sm" src="images/hero.jpg" alt="service image dashboard">
+                    <div class="absolute top-1/2 left-1/2 transform-x-[-50%] transform-y-[-50%] animate-zoomIn d transition-transform">
+                        <div id="playVid-btn" class="w-[60px] h-[60px] md:w-[80px] md:h-[80px] flex justify-center items-center bg-white rounded-full cursor-pointer drop-shadow-2xl">
+                            <i class="fa-solid fa-play text-xl"></i>
+                        </div>
+                    </div>
+                </div>
+                <div id="video_modal" class="hidden -z-10 transition-all">
+                        <div class="fixed h-full w-full border top-0 left-0 overflow-hidden m-0 bg-contain px-10 md:px-20 bg-black">
+                            <iframe width="100%" height="100%" name="report" allow="fullscreen" src="https://www.youtube.com/embed/DTLWoFe46TU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <i class="fixed top-8 right-4 md:right-8 text-[25px] text-white cursor-pointer fa-solid fa-x hover:rotate-180 hover:opacity-70 transition-all" id="close-icon"></i>
+                </div>
+            </div>
+        </section>
+        <!-- Form Section -->
+        <section class="mx-auto">
+            <h2 class="mx-auto font-bold max-w-4xl text-center text-[25px] md:text-[40px]/relaxed">كل ما يحتاجه مطعمك لتقديم خدمة التوصيل للمنازل</h2>
+            <p class="text-center mt-8 text-darkestGray font-[500] text-[19px] md:text-[20px]">إبدأ بالخطوة الأولى عبر ملأ المعلومات أسفله</p>
+            <div class="mt-14 bg-blueSky max-w-[900px] p-[30px] md:px-16 md:py-10 rounded-3xl mx-auto border">
+                <form action="" class="flex flex-col space-y-8 font-['Poppins']">
+                    <label for="name" class="text-darkestGray"><span class="text-red-400">*</span>Name<br>
+                        <input class="border w-full p-[12px] mt-3 rounded-lg focus:outline-none focus:bg-lightBgInput" required type="text" name="Nom de famille" id="" placeholder="Your Name">
+                    </label>
+                    <label for="name" class="text-darkestGray"><span class="text-red-400">*</span>Email<br>
+                        <input class="border w-full p-[12px] mt-3 rounded-lg focus:outline-none focus:bg-lightBgInput" required type="email" name="Email" id="" placeholder="Email">
+                    </label>
+                    <label for="name" class="text-darkestGray"><span class="text-red-400">*</span>Nom de l'entreprise/Restaurant<br>
+                        <input class="border w-full p-[12px] mt-3 rounded-lg focus:outline-none focus:bg-lightBgInput" required type="text" name="" id="" placeholder="Nom de l'entreprise">
+                    </label>
+                    <label for="" class="text-darkestGray">Message<br>
+                        <textarea class="w-full p-[12px] mt-3 rounded-lg focus:outline-none focus:bg-lightBgInput" dir="rtl" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    </label>
+                    <input class="bg-darkBlue text-white py-3 px-5 font-bold self-start rounded-full cursor-pointer hover:bg-lightBlue duration-150 " type="submit" value="Envoyer">
+                </form>
+            </div>
+        </section>
+        <section class="max-w-[500px] lg:max-w-[100%] flex flex-col-reverse lg:flex-row lg:items-stretch lg:justify-between pt-20 mx-auto">
+            <!-- text left -->
+            <div class="lg:w-[50%] relative">
+                <div class="absolute bg-lightWhite bottom-[30px] left-[30px] right-[30px] z-10 rounded-2xl p-[30px]">
+                    <h4 class="font-medium leading-[35px] mb-[20px]">
+                        الأن نستطيع توفير تجربة مميزة نستطيع توفير تجربة مميزة لزبنائنا,مع تطوير مشروعي بسهولة
+                    </h4>
+                    <h5 class="font-semibold mb-[20px]">Hicham</h5>
+                    <p class="text-grayColor text-[14px]">صاحب مطعم</p>
+                </div>
+                <img class="object-cover min-h-[480px] lg:h-full rounded-xl" src="images/Resto-owner-tresto.jpeg" alt="Resto owner" srcset="">
+            </div>
+            <!-- Image -->
+            <div class="lg:w-[40%] md:pt-[30px] mb-[30px] lg:mb-0">
+                <h2 class="mx-auto font-bold max-w-4xl text-center text-[25px] md:text-[32px] mb-[40px]">أكثر من 37 مطعم معجبين بالتطبيق ديالنا</h2>
+                <p class="text-[17px] md:text-[20px] text-darkestGray">
+                    جرب تا نتا التطبيق للمطعم ديالك، غادي تكتاشف الطريق لي مخبينها المطاعم الأخرى باش طورو المشروع ديالهم
+                </p>
+                <img class="my-[30px] w-[180px] mr-auto" src="images/Services-Track-Line.png" alt="resto owner" srcset="">
+                <div class="flex justify-end">
+                    <i class="fa-solid fa-star text-darkYellow"></i>
+                    <i class="fa-solid fa-star text-darkYellow"></i>
+                    <i class="fa-solid fa-star text-darkYellow"></i>
+                    <i class="fa-solid fa-star text-darkYellow"></i>
+                    <i class="fa-solid fa-star text-darkYellow"></i>
+                </div>
+                <p class="text-[15px] text-left mt-[15px] font-['Poppins']">4,7 étoiles sur 5 d'après 128 avis</p>
+            </div>
+        </section>
+        <section class="py-[100px]">
+            <h2 class="mx-auto font-bold max-w-4xl text-center text-[25px] md:text-[38px]/relaxed">السند ديالكم لرفع من ارباحكم</h2>
+            <a class="mt-[30px] mb-[50px] block mx-auto bg-darkPink text-white text-[18px] font-medium rounded-full text-center w-fit py-[12px] px-[30px] hover:bg-darkestPink transition-colors" href="#"><i class="fa-solid fa-check ml-[10px]"></i>
+                نعم اريد تطوير مشروعي</a>
+            <p class="text-center text-darkestGray font-[500] text-[19px] md:text-[20px] mb-[50px]">
+                أكثر من 37 مطعم معجبين بالتطبيق ديالنا
+            </p>
+            <div class="grid grid-cols-2 gap-y-10 content-center justify-items-center md:grid-cols-4">
+                <img class="w-[100px] object-contain" src="images/charlie-food.png" alt="charlie-food" srcset="">
+                <img class="w-[100px] object-contain" src="images/kingtacos.png" alt="kingtacos" srcset="">
+                <img class="w-[100px] object-contain" src="images/as-u-like.png" alt="as u like" srcset="">
+                <img class="w-[100px] object-contain" src="images/latuniserie.png" alt="latuniserie" srcset="">
+            </div>
+        </section>
+        <h2 class="border font-semibold"></h2>
+        <footer class="pt-[30px] pb-[15px] font-[400] text-[20px] text-darkestGray text-center">
+             كل الحقوق محفوظة. Tresto  حقوق النشر  &copy; <span id="curYear"></span>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
